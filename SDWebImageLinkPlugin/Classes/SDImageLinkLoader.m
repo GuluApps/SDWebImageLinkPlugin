@@ -194,7 +194,6 @@
             }
             return;
         }
-        NSAssert([image isKindOfClass:UIImage.class], @"NSItemProvider loaded object should be UIImage class");
         if (!image) {
             error = [NSError errorWithDomain:SDWebImageErrorDomain code:SDWebImageErrorBadImageData userInfo:nil];
         } else {
